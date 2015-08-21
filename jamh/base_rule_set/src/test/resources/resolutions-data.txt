@@ -1,0 +1,56 @@
+{
+   "fixed": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/1",
+      "id":"1",
+      "description":"A fix for this issue is checked into the tree and tested.",
+      "name":"Fixed"
+   },
+   "won't fix": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/2",
+      "id":"2",
+      "description":"The problem described is an issue which will never be fixed.",
+      "name":"Won't Fix"
+   },
+   "unresolved": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/9",
+      "id":"9",
+      "description":"Special resolution for SURVEY projects",
+      "name":"Unresolved"
+   },
+   "duplicate": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/3",
+      "id":"3",
+      "description":"The problem is a duplicate of an existing issue.",
+      "name":"Duplicate"
+   },
+   "incomplete": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/4",
+      "id":"4",
+      "description":"The problem is not completely described.",
+      "name":"Incomplete"
+   },
+   "cannot reproduce": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/5",
+      "id":"5",
+      "description":"All attempts at reproducing this issue failed, or not enough information was available to reproduce the issue. Reading the code produces no clues as to why this behavior would occur. If more information appears later, please reopen the issue.",
+      "name":"Cannot Reproduce"
+   },
+   "not a bug": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/6",
+      "id":"6",
+      "description":"The issue was reported as a bug but in fact that was the intended behaviour of the product. (It's not a bug, it's a feature!)",
+      "name":"Not a Bug"
+   },
+   "moved": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/7",
+      "id":"7",
+      "description":"Issue created in another project for ongoing development. Tracking continues there.",
+      "name":"Moved"
+   },
+   "done": {
+      "self":"https://dev7.its.cern.ch/jira/rest/api/2/resolution/8",
+      "id":"8",
+      "description":"",
+      "name":"Done"
+   }
+}

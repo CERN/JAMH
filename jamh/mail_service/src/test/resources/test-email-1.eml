@@ -1,0 +1,22 @@
+MIME-Version: 1.0
+Received: by 10.76.89.8 with HTTP; Sun, 2 Nov 2014 15:54:44 -0800 (PST)
+Date: Mon, 3 Nov 2014 00:54:44 +0100
+Delivered-To: djsuprin@gmail.com
+Message-ID: <CAA-zsCKg1-CKyYhhnUfq6F9mc_Kv4wA6_D63n=NyyT1nJJ+AAw@mail.gmail.com>
+Subject: NT-24 #issuetype=new feature #priority=minor
+From: Vladimir Vasilyev <djsuprin@gmail.com>
+To: icecontrols.test@cern.ch
+Content-Type: multipart/alternative; boundary=089e013d06404e29c40506e8f4c4
+
+--089e013d06404e29c40506e8f4c4
+Content-Type: text/plain; charset=UTF-8
+
+#reporter=vvasilye
+My comment body 2
+
+--089e013d06404e29c40506e8f4c4
+Content-Type: text/html; charset=UTF-8
+
+<div dir="ltr">#reporter=vvasilye<div>My comment body 2</div></div>
+
+--089e013d06404e29c40506e8f4c4--

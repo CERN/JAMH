@@ -1,0 +1,35 @@
+{
+	"close issue": {
+		"id":"701",
+		"name":"Close Issue",
+		"to": {
+			"self":"https://dev7.its.cern.ch/jira/rest/api/2/status/6",
+			"description":"The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+			"iconUrl":"https://dev7.its.cern.ch/jira/images/icons/statuses/closed.png",
+			"name":"Closed",
+			"id":"6"
+		}
+	},
+	"reopen issue": {
+		"id":"3",
+		"name":"Reopen Issue",
+		"to": {
+			"self":"https://dev7.its.cern.ch/jira/rest/api/2/status/4",
+			"description":"This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved.",
+			"iconUrl":"https://dev7.its.cern.ch/jira/images/icons/statuses/reopened.png",
+			"name":"Reopened",
+			"id":"4"
+		}
+	},
+	"resolve issue": {
+		"id":"1",
+		"name":"Resolve Issue",
+		"to": {
+			"self":"https://dev7.its.cern.ch/jira/rest/api/2/status/2",
+			"description":"Resolve issue blabla.",
+			"iconUrl":"https://dev7.its.cern.ch/jira/images/icons/statuses/resolve.png",
+			"name":"Resolved",
+			"id":"4"
+		}
+	}
+}

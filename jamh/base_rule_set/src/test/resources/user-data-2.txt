@@ -1,0 +1,15 @@
+{
+   "self":"https://dev7.its.cern.ch/jira/rest/api/2/user?username=testuser",
+   "key":"testuser",
+   "name":"testuser",
+   "emailAddress":"djsuprin@mail.ru",
+   "avatarUrls":{
+      "16x16":"https://dev7.its.cern.ch/jira/secure/useravatar?size=xsmall&avatarId=10242",
+      "24x24":"https://dev7.its.cern.ch/jira/secure/useravatar?size=small&avatarId=10242",
+      "32x32":"https://dev7.its.cern.ch/jira/secure/useravatar?size=medium&avatarId=10242",
+      "48x48":"https://dev7.its.cern.ch/jira/secure/useravatar?avatarId=10242"
+   },
+   "displayName":"Test User",
+   "active":true,
+   "timeZone":"Europe/Zurich"
+}

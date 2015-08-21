@@ -1,0 +1,21 @@
+MIME-Version: 1.0
+Received: by 10.76.89.8 with HTTP; Thu, 9 Oct 2014 16:43:39 -0700 (PDT)
+Date: Fri, 10 Oct 2014 01:43:39 +0200
+Delivered-To: djsuprin@gmail.com
+Message-ID: <CAA-zsC+dJ=1mTL1e59rWDTd-Oo+Z9Uo8qJky3nNgOkxhocPXgg@mail.gmail.com>
+Subject: NT-7 #DELETE
+From: Vladimir Vasilyev <djsuprin@gmail.com>
+To: icecontrols.test@cern.ch
+Content-Type: multipart/alternative; boundary=001a113de414794fb605050600b7
+
+--001a113de414794fb605050600b7
+Content-Type: text/plain; charset=UTF-8
+
+tra la la
+
+--001a113de414794fb605050600b7
+Content-Type: text/html; charset=UTF-8
+
+<div dir="ltr">tra la la</div>
+
+--001a113de414794fb605050600b7--

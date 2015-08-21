@@ -1,0 +1,27 @@
+{
+  "expand": "transitions",
+  "transitions": [
+    {
+      "id": "5",
+      "name": "Resolve Issue",
+      "to": {
+        "self": "https://dev7.its.cern.ch/jira/rest/api/2/status/5",
+        "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+        "iconUrl": "https://dev7.its.cern.ch/jira/images/icons/statuses/resolved.png",
+        "name": "Resolved",
+        "id": "5"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Close Issue",
+      "to": {
+        "self": "https://dev7.its.cern.ch/jira/rest/api/2/status/6",
+        "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+        "iconUrl": "https://dev7.its.cern.ch/jira/images/icons/statuses/closed.png",
+        "name": "Closed",
+        "id": "6"
+      }
+    }
+  ]
+}

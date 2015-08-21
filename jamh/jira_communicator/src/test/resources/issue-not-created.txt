@@ -1,0 +1,6 @@
+{
+  "errorMessages": [],
+  "errors": {
+    "issuetype": "issue type is required"
+  }
+}
