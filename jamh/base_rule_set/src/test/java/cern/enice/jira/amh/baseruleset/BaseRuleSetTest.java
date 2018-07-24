@@ -1,4 +1,4 @@
-package cern.enice.jira.amh.baseruleset.rulesets;
+package cern.enice.jira.amh.baseruleset;
 
 import static org.junit.Assert.*;
 
@@ -11,6 +11,7 @@ import org.junit.Test;
 
 import cern.enice.jira.amh.baseruleset.Configuration;
 import cern.enice.jira.amh.baseruleset.Tokens;
+import cern.enice.jira.amh.baseruleset.rulesets.BaseRuleSet;
 import cern.enice.jira.amh.dto.EMail;
 import cern.enice.jira.amh.dto.EMailAddress;
 import cern.enice.jira.amh.dto.IssueDescriptor;
