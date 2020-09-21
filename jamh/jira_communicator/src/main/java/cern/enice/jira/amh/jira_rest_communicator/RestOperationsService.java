@@ -111,8 +111,17 @@ public class RestOperationsService {
 	Map<String, Object> getUserIfOneIsFound(String username, Object content) {
 		if (username.contains("@")) {
 			List<Map<String, Object>> foundUsers = ((List<Map<String, Object>>) content);
-			if (foundUsers.isEmpty()) return null;
-			return foundUsers.get(0);
+			// If only one user is found, don't try to match the email to allow users
+			// using their alternative email addresses
+			if (foundUsers.size() == 1) {
+				return foundUsers.get(0);
+			}
+
+			for (Map<String, Object> cUser: foundUsers) {
+				if (((String)cUser.get("emailAddress")).equals(username))
+					return cUser;
+			}
+			return null;
 		} else {
 			return (Map<String, Object>)content; 
 		}
@@ -121,7 +130,7 @@ public class RestOperationsService {
 	String getUserSearchUrl(String username) {
 		if (username.contains("@")) 
 			return String.format(
-					"%s/rest/api/latest/user/search?maxResults=1&username=%s", 
+					"%s/rest/api/latest/user/search?maxResults=-1&username=%s", 
 					configuration.getJiraBaseUrl(), username);
 		else 
 			return String.format(
