@@ -80,7 +80,7 @@ public class RestOperationsService {
 			logger.log(LogProvider.DEBUG, "Couldn't fetch issue resolutions.", e);
 		}
 		return null;
-		}
+	}
 	
 	User getUser(String username) {
 		try {
@@ -111,6 +111,12 @@ public class RestOperationsService {
 	Map<String, Object> getUserIfOneIsFound(String username, Object content) {
 		if (username.contains("@")) {
 			List<Map<String, Object>> foundUsers = ((List<Map<String, Object>>) content);
+			// If only one user is found, don't try to match the email to allow users
+			// using their alternative email addresses
+			if (foundUsers.size() == 1) {
+				return foundUsers.get(0);
+			}
+
 			for (Map<String, Object> cUser: foundUsers) {
 				if (((String)cUser.get("emailAddress")).equals(username))
 					return cUser;
@@ -124,7 +130,7 @@ public class RestOperationsService {
 	String getUserSearchUrl(String username) {
 		if (username.contains("@")) 
 			return String.format(
-					"%s/rest/api/latest/user/search?maxResults=0&username=%s", 
+					"%s/rest/api/latest/user/search?maxResults=-1&username=%s", 
 					configuration.getJiraBaseUrl(), username);
 		else 
 			return String.format(
