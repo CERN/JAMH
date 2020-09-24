@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cern.enice.jira.listeners</groupId>
 	<artifactId>jira-listeners-parent</artifactId>
-	<version>0.1.0</version>
+	<version>0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>change_request_listener</module>
@@ -12,6 +12,40 @@
 		<module>pvss_license_request_listener</module>
 		<module>second_line_support_request_listener</module>
 	</modules>
+    <properties>
+	    <java.version>8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+    <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>${java.version}</release>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<useIncrementalCompilation>false</useIncrementalCompilation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>5.1.1</version>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Export-Package></Export-Package>
+						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+						<Bundle-Name>${project.name}</Bundle-Name>
+						<Bundle-Description>${project.description}</Bundle-Description>
+						<Bundle-Category>JIRA Listeners</Bundle-Category>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<profiles>
 		<profile>
